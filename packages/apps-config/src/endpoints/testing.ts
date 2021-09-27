@@ -18,17 +18,17 @@ export function createTesting (t: TFunction, firstOnly: boolean, withSort: boole
   return expandEndpoints(t, [
     // alphabetical based on chain name, e.g. Amber, Arcadia, Beresheet, ...
     {
-      info: 'aleph',
-      text: t('rpc.test.aleph', 'Aleph Zero Testnet', { ns: 'apps-config' }),
-      providers: {
-        'Aleph Zero Foundation': 'wss://test-api.alephzero.org'
-      }
-    },
-    {
       info: 'automata-contextfree',
       text: t('rpc.text.automata-contextfree', 'Automata ContextFree', { ns: 'apps-config' }),
       providers: {
         'Automata ContextFree': 'wss://api-contextfree.ata.network'
+      }
+    },
+    {
+      info: 'aleph',
+      text: t('rpc.test.aleph', 'Aleph Zero Testnet', { ns: 'apps-config' }),
+      providers: {
+        'Aleph Zero Foundation': 'wss://test-api.alephzero.org'
       }
     },
     {
