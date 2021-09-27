@@ -6,6 +6,7 @@ import type { OverrideBundleDefinition } from '@polkadot/types/types';
 import acala from './acala';
 import apron from './apron';
 import aresParachain from './ares-parachain';
+import automataContextFree from './automata-contextfree';
 import basilisk from './basilisk';
 import beresheet from './beresheet';
 import bifrost from './bifrost';
@@ -136,6 +137,7 @@ const spec: Record<string, OverrideBundleDefinition> = {
   'crust-parachain': crust,
   'cumulus-subsocial-parachain': subsocial,
   'cumulus-test-parachain': testPara,
+  'contextfree': automataContextFree,
   datahighway: westlake,
   'datahighway-parachain': datahighwayParachain,
   dawn: eave,
@@ -220,7 +222,7 @@ const spec: Record<string, OverrideBundleDefinition> = {
   vodka,
   'web3games-node': web3games,
   'zcloak-network': zCloak,
-  zeitgeist: zeitgeist
+  zeitgeist: zeitgeist,
 };
 
 export default spec;

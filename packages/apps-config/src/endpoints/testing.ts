@@ -25,6 +25,13 @@ export function createTesting (t: TFunction, firstOnly: boolean, withSort: boole
       }
     },
     {
+      info: 'automata-contextfree',
+      text: t('rpc.text.automata-contextfree', 'Automata ContextFree', { ns: 'apps-config' }),
+      providers: {
+        'Automata ContextFree': 'wss://api-contextfree.ata.network'
+      }
+    },
+    {
       info: 'centrifuge',
       text: t('rpc.test.amber', 'Amber', { ns: 'apps-config' }),
       providers: {
