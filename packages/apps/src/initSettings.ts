@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import queryString from 'query-string';
-import store from 'store';
 
 import { createWsEndpoints } from '@polkadot/apps-config';
 import { extractIpfsDetails } from '@polkadot/react-hooks/useIpfs';
