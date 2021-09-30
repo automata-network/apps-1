@@ -47,7 +47,7 @@ function getApiUrl (): string {
   }
 
   // TODO Fix it, set automata default rpcUrl
-  const customUrl = "wss://api-contextfree.ata.network";
+  const customUrl = "wss://cf-api.ata.network";
   // via settings, or the default chain
   console.log(customUrl)
   return customUrl
