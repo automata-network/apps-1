@@ -7,6 +7,7 @@ import acala from './acala';
 import apron from './apron';
 import aresParachain from './ares-parachain';
 import automataContextFree from './automata-contextfree';
+import automataFiniteState from './automata-finitestate';
 import basilisk from './basilisk';
 import beresheet from './beresheet';
 import bifrost from './bifrost';
@@ -151,6 +152,7 @@ const spec: Record<string, OverrideBundleDefinition> = {
   'encointer-node-teeproxy': encointerNodeTeeproxy,
   'encointer-parachain': encointerPara,
   fantour,
+  finitestate: automataFiniteState,
   galital: galital,
   'galital-collator': galitalParachain,
   gamepower,

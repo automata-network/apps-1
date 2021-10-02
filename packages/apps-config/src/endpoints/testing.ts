@@ -25,6 +25,13 @@ export function createTesting (t: TFunction, firstOnly: boolean, withSort: boole
       }
     },
     {
+      info: 'automata-finitestate',
+      text: t('rpc.text.automata-finitestate', 'Automata FiniteState', { ns: 'apps-config' }),
+      providers: {
+        'Automata FiniteState': 'wss://fs-api.ata.network'
+      }
+    },
+    {
       info: 'aleph',
       text: t('rpc.test.aleph', 'Aleph Zero Testnet', { ns: 'apps-config' }),
       providers: {

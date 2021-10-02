@@ -32,7 +32,7 @@ function createExternals (t: TFunction): ItemRoute[] {
       icon: 'code-branch',
       name: 'github',
       text: t<string>('nav.github', 'GitHub', { ns: 'apps-routing' })
-    },
+    }
     // {
     //   href: 'https://docs.ata.network',
     //   icon: 'book',
