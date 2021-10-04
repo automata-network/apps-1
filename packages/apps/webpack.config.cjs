@@ -17,7 +17,7 @@ module.exports = merge(
     devtool: process.env.BUILD_ANALYZE ? 'source-map' : false,
     plugins: [
       new HtmlWebpackPlugin({
-        PAGE_TITLE: 'Automata ContextFree',
+        PAGE_TITLE: 'Automata Dashboard',
         inject: true,
         template: path.join(context, `${hasPublic ? 'public/' : ''}index.html`)
       })

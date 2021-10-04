@@ -19,7 +19,7 @@ module.exports = merge(
       // It must be placed before HtmlWebpackPlugin
       new CopyWebpackPlugin({ patterns: [{ from: '../apps/public' }] }),
       new HtmlWebpackPlugin({
-        PAGE_TITLE: 'Automata ContextFree',
+        PAGE_TITLE: 'Automata Dashboard',
         inject: true,
         template: path.join(context, '../apps/public/index.html')
       })
