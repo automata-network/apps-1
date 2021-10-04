@@ -21,14 +21,14 @@ export function createTesting (t: TFunction, firstOnly: boolean, withSort: boole
       info: 'automata-contextfree',
       text: t('rpc.text.automata-contextfree', 'Automata ContextFree', { ns: 'apps-config' }),
       providers: {
-        'Automata ContextFree': 'wss://cf-api.ata.network'
+        'Automata Network': 'wss://cf-api.ata.network'
       }
     },
     {
       info: 'automata-finitestate',
       text: t('rpc.text.automata-finitestate', 'Automata FiniteState', { ns: 'apps-config' }),
       providers: {
-        'Automata FiniteState': 'wss://fs-api.ata.network'
+        'Automata Network': 'wss://fs-api.ata.network'
       }
     },
     {
