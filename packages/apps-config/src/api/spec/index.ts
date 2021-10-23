@@ -8,6 +8,7 @@ import apron from './apron';
 import aresParachain from './ares-parachain';
 import automataContextFree from './automata-contextfree';
 import automataFiniteState from './automata-finitestate';
+import automataMainnet from './automata-mainnet';
 import basilisk from './basilisk';
 import beresheet from './beresheet';
 import bifrost from './bifrost';
@@ -107,6 +108,7 @@ import zero from './zero';
 
 // NOTE: The mapping is done from specName in state.getRuntimeVersion
 const spec: Record<string, OverrideBundleDefinition> = {
+  automata: automataMainnet,
   Crab: crab,
   Darwinia: darwinia,
   'Darwinia Crab PC2': pangolin,

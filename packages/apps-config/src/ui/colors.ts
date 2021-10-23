@@ -17,6 +17,7 @@ const chainAleph = '#00CCAB';
 const chainApron = 'linear-gradient(45deg, #0099F7 0%, #2E49EB 100%)';
 const chainAutomataContextFree = '#EC7032';
 const chainAutomataFiniteState = '#EC7032';
+const chainAutomataMainnet = '#EC7032';
 const chainBitCountry = '#191a2e';
 const chainBeastEave = '#900048';
 const chainComposable = '#FF8500';
@@ -104,6 +105,7 @@ const nodeApron = 'linear-gradient(45deg, #0099F7 0%, #2E49EB 100%)';
 const nodeAres = '#70FF8B';
 const nodeAutomataContextFree = '#EC7032';
 const nodeAutomataFiniteState = '#EC7032';
+const nodeAutomataMainnet = '#EC7032';
 const nodeBasilisk = '#9eec1b';
 const nodeBitCountry = '#191a2e';
 const nodeBifrost = '#5a25f0';
@@ -179,6 +181,7 @@ export const chainColors: Record<string, string> = Object.entries({
   'Ares PC1': chainRoccoAres,
   'Automata ContextFree': chainAutomataContextFree,
   'Automata FiniteState': chainAutomataFiniteState,
+  'Automata Mainnet': chainAutomataMainnet,
   'Beast Developer': chainBeastEave,
   bifrost: chainRoccoBifrost,
   'Bifrost Asgard CC4': chainRoccoBifrost,
@@ -322,6 +325,7 @@ export const nodeColors = Object.entries({
   'Apron Node': nodeApron,
   'Automata ContextFree Node': nodeAutomataContextFree,
   'Automata FiniteState Node': nodeAutomataFiniteState,
+  'Automata Mainnet Node': nodeAutomataMainnet,
   Basilisk: nodeBasilisk,
   'Bifrost Node': nodeBifrost,
   'Bit.Country Node': nodeBitCountry,

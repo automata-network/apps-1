@@ -32,6 +32,13 @@ export function createTesting (t: TFunction, firstOnly: boolean, withSort: boole
       }
     },
     {
+      info: 'automata-mainnet',
+      text: t('rpc.text.automata-mainnet', 'Automata Mainnet', { ns: 'apps-config' }),
+      providers: {
+        'Automata Network': 'wss://am-api.ata.network'
+      }
+    },
+    {
       info: 'aleph',
       text: t('rpc.test.aleph', 'Aleph Zero Testnet', { ns: 'apps-config' }),
       providers: {
