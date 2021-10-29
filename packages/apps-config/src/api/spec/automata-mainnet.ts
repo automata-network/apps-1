@@ -17,10 +17,25 @@ const definitions: OverrideBundleDefinition = {
         ProposalVotes: {
           votes_for: 'Vec<AccountId>',
           votes_against: 'Vec<AccountId>',
-          status: 'enum'
+          status: {
+            _enum: [
+              'Initiated',
+              'Approved',
+              'Rejected'
+            ]
+          }
         },
         BridgeTokenId: 'U256',
-        BridgeChainId: 'u8'
+        BridgeChainId: 'u8',
+        VestingPlan: {
+          start_time: 'u64',
+          cliff_duration: 'u64',
+          total_duration: 'u64',
+          interval: 'u64',
+          initial_amount: 'Balance',
+          total_amount: 'Balance',
+          vesting_during_cliff: 'bool'
+        }
       }
     }
   ]
