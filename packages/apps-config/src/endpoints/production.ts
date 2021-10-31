@@ -18,6 +18,13 @@ import { expandEndpoints } from './util';
 export function createProduction (t: TFunction, firstOnly: boolean, withSort: boolean): LinkOption[] {
   return expandEndpoints(t, [
     {
+      info: 'automata-mainnet',
+      text: t('rpc.text.automata-mainnet', 'Automata Mainnet', { ns: 'apps-config' }),
+      providers: {
+        'Automata Network': 'wss://api.ata.network'
+      }
+    },
+    {
       dnslink: 'centrifuge',
       info: 'centrifuge',
       text: t('rpc.prod.centrifuge', 'Centrifuge', { ns: 'apps-config' }),
