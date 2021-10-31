@@ -2,7 +2,7 @@ name: Build and deploy
 
 on:
   push:
-    branches: [ contextfree ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -19,5 +19,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           ACCESS_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
-          BRANCH: gh-pages-contextfree
+          BRANCH: gh-pages
           FOLDER: packages/apps/build
