@@ -19,7 +19,7 @@ export function createProduction (t: TFunction, firstOnly: boolean, withSort: bo
   return expandEndpoints(t, [
     {
       info: 'automata-mainnet',
-      text: t('rpc.text.automata-mainnet', 'Automata Mainnet', { ns: 'apps-config' }),
+      text: t('rpc.test.automata-mainnet', 'Automata Mainnet', { ns: 'apps-config' }),
       providers: {
         'Automata Network': 'wss://api.ata.network'
       }

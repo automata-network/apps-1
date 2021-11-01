@@ -19,14 +19,14 @@ export function createTesting (t: TFunction, firstOnly: boolean, withSort: boole
     // alphabetical based on chain name, e.g. Amber, Arcadia, Beresheet, ...
     {
       info: 'automata-contextfree',
-      text: t('rpc.text.automata-contextfree', 'Automata ContextFree', { ns: 'apps-config' }),
+      text: t('rpc.test.automata-contextfree', 'Automata ContextFree', { ns: 'apps-config' }),
       providers: {
         'Automata Network': 'wss://cf-api.ata.network'
       }
     },
     {
       info: 'automata-finitestate',
-      text: t('rpc.text.automata-finitestate', 'Automata FiniteState', { ns: 'apps-config' }),
+      text: t('rpc.test.automata-finitestate', 'Automata FiniteState', { ns: 'apps-config' }),
       providers: {
         'Automata Network': 'wss://fs-api.ata.network'
       }
