@@ -76,7 +76,7 @@ const definitions: OverrideBundleDefinition = {
           workspaces: 'Vec<Workspace>'
         },
         VotingFormat: {
-          _enum: ['SingleChoice']
+          _enum: ['SingleChoice', 'SplitVote']
         },
         OptionIndex: 'u8',
         PrivacyLevel: {
