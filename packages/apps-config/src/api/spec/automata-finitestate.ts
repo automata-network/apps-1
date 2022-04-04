@@ -67,6 +67,7 @@ const definitions: OverrideBundleDefinition = {
         UserGroup: {
           owner: "CrossChainAccount",
           admins: "Vec<CrossChainAccount>",
+          maintainers: "Vec<CrossChainAccount>",
           proposers: "Option<Vec<CrossChainAccount>>"
         },
         Project: {
@@ -79,7 +80,13 @@ const definitions: OverrideBundleDefinition = {
         },
         OptionIndex: 'u8',
         PrivacyLevel: {
-          _enum: ['Opaque', 'Private', 'Public', 'Mixed']
+          _enum: {
+            Opaque: 'u8', 
+            Rank: 'Null',
+            Private: 'Null', 
+            Public: 'Null', 
+            Mixed: 'Null'
+          }
         },
         VotingPower: 'U256',
         DAOProposalState: {
