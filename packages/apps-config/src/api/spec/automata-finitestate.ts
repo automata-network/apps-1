@@ -91,7 +91,7 @@ const definitions: OverrideBundleDefinition = {
         VotingPower: 'U256',
         DAOProposalState: {
           finalized: "bool",
-          snapshots: "Vec<U256>",
+          snapshots: "Vec<Option<U256>>",
           blacklisted: "bool",
           votes: "Vec<VotingPower>",
           pub_voters: "Option<IpfsHash>",
@@ -106,6 +106,7 @@ const definitions: OverrideBundleDefinition = {
           _start: 'u64',
           _end: 'u64',
           _frequency: 'Option<u64>',
+          _workspaces: 'Vec<Workspace>',
           state: 'DAOProposalState'
         },
         VoteUpdate: {
